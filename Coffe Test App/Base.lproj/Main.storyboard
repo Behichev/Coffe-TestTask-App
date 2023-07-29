@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cdr-57-8oh">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="8nK-ar-nKv">
+            <objects>
+                <viewController id="DFX-Lm-oqE" customClass="MainViewController" customModule="Coffe_Test_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="soK-6y-gUz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qxU-g4-l1b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Main" id="qHk-GC-RCP">
+                        <imageReference key="image" image="house" catalog="system" variableValue="1"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BL5-WP-cqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-816" y="715"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NUG-ZO-W7H">
+            <objects>
+                <viewController id="pap-L4-c7y" customClass="QRViewController" customModule="Coffe_Test_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hgd-Go-dKY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GtM-pM-H4d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="2hf-e5-m2H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHN-CX-XNb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="715"/>
+        </scene>
+        <!--Caffe-->
+        <scene sceneID="vLF-U7-ibe">
+            <objects>
+                <viewController id="Nfq-ag-f55" customClass="CaffeViewController" customModule="Coffe_Test_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Enb-n0-cVi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Poq-Nh-Deb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Caffe" image="cup.and.saucer.fill" catalog="system" id="N59-H1-xZg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89D-Oj-Ppb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="715"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="09x-g7-V5R">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Cdr-57-8oh" customClass="TabBarController" customModule="Coffe_Test_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hqc-Ew-nye" customClass="TabBarWithCorners" customModule="Coffe_Test_App" customModuleProvider="target">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="borderPink"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DFX-Lm-oqE" kind="relationship" relationship="viewControllers" id="RQc-Hv-CgB"/>
+                        <segue destination="pap-L4-c7y" kind="relationship" relationship="viewControllers" id="0F1-qQ-ok2"/>
+                        <segue destination="Nfq-ag-f55" kind="relationship" relationship="viewControllers" id="duY-Z3-RKV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Izz-Qj-vOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Hqc-Ew-nye">
+            <size key="intrinsicContentSize" width="-1" height="83"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="cup.and.saucer.fill" catalog="system" width="128" height="91"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <namedColor name="borderPink">
+            <color red="0.9882352941176471" green="0.88627450980392153" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
