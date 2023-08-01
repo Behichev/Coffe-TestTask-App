@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23B515472A78340900D21030 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B515452A78340900D21030 /* NewsCollectionViewCell.swift */; };
+		23B515482A78340900D21030 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23B515462A78340900D21030 /* NewsCollectionViewCell.xib */; };
+		23B5154C2A78E16100D21030 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B5154B2A78E16100D21030 /* File.swift */; };
+		23EE16892A7742DF00C0F3CD /* CaffeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE16872A7742DF00C0F3CD /* CaffeTableViewCell.swift */; };
+		23EE168A2A7742DF00C0F3CD /* CaffeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23EE16882A7742DF00C0F3CD /* CaffeTableViewCell.xib */; };
+		23EE168D2A779DDA00C0F3CD /* CaffeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE168C2A779DDA00C0F3CD /* CaffeModel.swift */; };
+		23EE16912A77CD4500C0F3CD /* CaffeDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE168F2A77CD4500C0F3CD /* CaffeDetailedViewController.swift */; };
+		23EE16922A77CD4500C0F3CD /* CaffeDetailedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23EE16902A77CD4500C0F3CD /* CaffeDetailedViewController.xib */; };
 		23FFE9892A746AEC0099C07E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FFE9882A746AEC0099C07E /* AppDelegate.swift */; };
 		23FFE98B2A746AEC0099C07E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FFE98A2A746AEC0099C07E /* SceneDelegate.swift */; };
 		23FFE98D2A746AEC0099C07E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FFE98C2A746AEC0099C07E /* MainViewController.swift */; };
@@ -20,6 +28,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23B515452A78340900D21030 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		23B515462A78340900D21030 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
+		23B5154B2A78E16100D21030 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		23EE16872A7742DF00C0F3CD /* CaffeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeTableViewCell.swift; sourceTree = "<group>"; };
+		23EE16882A7742DF00C0F3CD /* CaffeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaffeTableViewCell.xib; sourceTree = "<group>"; };
+		23EE168C2A779DDA00C0F3CD /* CaffeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeModel.swift; sourceTree = "<group>"; };
+		23EE168F2A77CD4500C0F3CD /* CaffeDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeDetailedViewController.swift; sourceTree = "<group>"; };
+		23EE16902A77CD4500C0F3CD /* CaffeDetailedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaffeDetailedViewController.xib; sourceTree = "<group>"; };
 		23FFE9852A746AEC0099C07E /* Coffe Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffe Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FFE9882A746AEC0099C07E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23FFE98A2A746AEC0099C07E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +61,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23B515492A78340E00D21030 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23B515452A78340900D21030 /* NewsCollectionViewCell.swift */,
+				23B515462A78340900D21030 /* NewsCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23B5154A2A78E12A00D21030 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23B5154B2A78E16100D21030 /* File.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23EE16822A7741F100C0F3CD /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				23FFE99E2A746C850099C07E /* TabBarWithCorners.swift */,
+				23FFE99C2A746B790099C07E /* TabBarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		23EE16832A77421100C0F3CD /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				23FFE98C2A746AEC0099C07E /* MainViewController.swift */,
+				23B5154A2A78E12A00D21030 /* Model */,
+				23B515492A78340E00D21030 /* Cell */,
+			);
+			path = "Main Screen";
+			sourceTree = "<group>";
+		};
+		23EE16842A77422300C0F3CD /* Caffe List Screen */ = {
+			isa = PBXGroup;
+			children = (
+				23FFE9A02A7504CE0099C07E /* CaffeViewController.swift */,
+				23EE168B2A779D9C00C0F3CD /* Model */,
+				23EE168E2A77CD1700C0F3CD /* Detailed Caffe Screen */,
+				23EE16862A7742B200C0F3CD /* Cell */,
+			);
+			path = "Caffe List Screen";
+			sourceTree = "<group>";
+		};
+		23EE16852A77423900C0F3CD /* QR Card Screen */ = {
+			isa = PBXGroup;
+			children = (
+				23FFE9A22A7504F10099C07E /* QRViewController.swift */,
+			);
+			path = "QR Card Screen";
+			sourceTree = "<group>";
+		};
+		23EE16862A7742B200C0F3CD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23EE16872A7742DF00C0F3CD /* CaffeTableViewCell.swift */,
+				23EE16882A7742DF00C0F3CD /* CaffeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23EE168B2A779D9C00C0F3CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23EE168C2A779DDA00C0F3CD /* CaffeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23EE168E2A77CD1700C0F3CD /* Detailed Caffe Screen */ = {
+			isa = PBXGroup;
+			children = (
+				23EE168F2A77CD4500C0F3CD /* CaffeDetailedViewController.swift */,
+				23EE16902A77CD4500C0F3CD /* CaffeDetailedViewController.xib */,
+			);
+			path = "Detailed Caffe Screen";
+			sourceTree = "<group>";
+		};
 		23FFE97C2A746AEC0099C07E = {
 			isa = PBXGroup;
 			children = (
@@ -65,11 +162,10 @@
 			isa = PBXGroup;
 			children = (
 				23FFE9A42A7568FF0099C07E /* App */,
-				23FFE98C2A746AEC0099C07E /* MainViewController.swift */,
-				23FFE9A02A7504CE0099C07E /* CaffeViewController.swift */,
-				23FFE9A22A7504F10099C07E /* QRViewController.swift */,
-				23FFE99C2A746B790099C07E /* TabBarController.swift */,
-				23FFE99E2A746C850099C07E /* TabBarWithCorners.swift */,
+				23EE16832A77421100C0F3CD /* Main Screen */,
+				23EE16842A77422300C0F3CD /* Caffe List Screen */,
+				23EE16852A77423900C0F3CD /* QR Card Screen */,
+				23EE16822A7741F100C0F3CD /* Tabbar */,
 				23FFE98E2A746AEC0099C07E /* Main.storyboard */,
 				23FFE9A52A75690B0099C07E /* Resources */,
 				23FFE9962A746AEF0099C07E /* Info.plist */,
@@ -156,6 +252,9 @@
 				23FFE9952A746AEF0099C07E /* LaunchScreen.storyboard in Resources */,
 				23FFE9922A746AEF0099C07E /* Assets.xcassets in Resources */,
 				23FFE9902A746AEC0099C07E /* Main.storyboard in Resources */,
+				23EE16922A77CD4500C0F3CD /* CaffeDetailedViewController.xib in Resources */,
+				23EE168A2A7742DF00C0F3CD /* CaffeTableViewCell.xib in Resources */,
+				23B515482A78340900D21030 /* NewsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,9 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EE16912A77CD4500C0F3CD /* CaffeDetailedViewController.swift in Sources */,
+				23B5154C2A78E16100D21030 /* File.swift in Sources */,
 				23FFE9A12A7504CE0099C07E /* CaffeViewController.swift in Sources */,
+				23EE168D2A779DDA00C0F3CD /* CaffeModel.swift in Sources */,
+				23B515472A78340900D21030 /* NewsCollectionViewCell.swift in Sources */,
 				23FFE98D2A746AEC0099C07E /* MainViewController.swift in Sources */,
 				23FFE99F2A746C850099C07E /* TabBarWithCorners.swift in Sources */,
+				23EE16892A7742DF00C0F3CD /* CaffeTableViewCell.swift in Sources */,
 				23FFE9A32A7504F10099C07E /* QRViewController.swift in Sources */,
 				23FFE99D2A746B790099C07E /* TabBarController.swift in Sources */,
 				23FFE9892A746AEC0099C07E /* AppDelegate.swift in Sources */,
